@@ -1,0 +1,2 @@
+cat results | tr ',' ' ' > resultsBlank
+./mean.awk < resultsBlank > meanResults.csv

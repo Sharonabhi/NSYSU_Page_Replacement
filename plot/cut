@@ -1,0 +1,14 @@
+cat title.csv > FIFO.csv
+cat meanResults.csv | awk '/FIFO/' >> FIFO.csv
+
+cat title.csv > Optimal.csv
+cat meanResults.csv | awk '/Optimal/' >> Optimal.csv
+
+cat title.csv > ARB.csv
+cat meanResults.csv | awk '/ARB/' >> ARB.csv
+
+cat title.csv > LIFO.csv
+cat meanResults.csv | awk '/LIFO/' >> LIFO.csv
+
+cat title.csv > NRA.csv
+cat meanResults.csv | awk '/NRA/' >> NRA.csv
